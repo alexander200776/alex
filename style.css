@@ -8,6 +8,7 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 32px;
     letter-spacing: 2px;
+    color: #16A085
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -53,7 +54,7 @@ nav {
 
 nav a {
     color: #F47B20;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -90,12 +91,12 @@ nav a.active {
 
 .btn-light {
     background: #F47B20;
-    color: #0d0a03;
+    color: #F3F3F3;
 }
 
 .btn-light:hover {
     background: #eaf0e5;
-    color: #304e35;
+    color: #F47B20;
 }
 
 /* HALAMAN BERANDA */
@@ -133,10 +134,10 @@ nav a.active {
 }
 
 .hero-image {
-    background: #d5e2cb;
+    background: #202020;
     border-radius: 50%;
-    width: 320px;
-    height: 320px;
+    width: 420px;
+    height: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,7 +157,7 @@ nav a.active {
 .hero-image h3 {
     width: 100%;
     color: #F47B20;
-    font-size: 14px;
+    font-size: 25px;
 }
 
 /* BAGIAN UMUM */
@@ -187,6 +188,7 @@ nav a.active {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 12px #0000000d;
+    transform: translateY();
 }
 
 .kategori-card img {
@@ -194,8 +196,13 @@ nav a.active {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    display: block;
+    transition: 0,5;
+    
 }
-
+.kategori-card:hover img {
+    transform: scale(1.08)
+}
 .kategori-card h3 {
     margin: 10px 0;
 }
@@ -203,11 +210,14 @@ nav a.active {
 .kategori-card p {
     color: #777;
     margin-bottom: 15px;
+    overflow: hidden;
+    
 }
 
 .kategori-card a {
     color: #777;
     font-weight: bold;
+    overflow: hidden;
 }
 
 /* PROMO */
